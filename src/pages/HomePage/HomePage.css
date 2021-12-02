@@ -1,0 +1,14 @@
+.homeDiv{
+    background-image: url('https://media.giphy.com/avatars/premicarsbrasil/u2KS26MQ0SNt.gif');
+    width: auto;
+    height: 100vmin;
+    background-size: cover;
+    margin-top: 0px;
+    padding:0px;
+}
+
+.headlight{
+    margin-left: 135vmin;
+    margin-top: 30vmin ;
+    font-size: 25px;
+}

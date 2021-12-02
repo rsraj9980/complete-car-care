@@ -1,0 +1,10 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    color: #F06043;
+    font-size: large;
+    padding-top:15px;
+    background-color: #E4FFFF;
+}
