@@ -1,0 +1,22 @@
+.login-form-container {
+  width: 40vmin;
+  height: 40vmin;
+  padding: 7vmin;
+  border: .1vmin solid black;
+  border-radius: 10px;
+}
+.login-form-container > form > p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+.login-form-container > form > p > input,label {
+  border-radius: 6px;
+}
+
+
+.login-form-container > form > button {
+  width: 20vmin;
+  height: 5vmin;
+  border-radius: 6px;
+} 

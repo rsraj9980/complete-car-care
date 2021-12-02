@@ -1,0 +1,16 @@
+.bodyDiv{
+    background-image: linear-gradient(#FFBC97,#ce6101bb );
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.AuthDiv{
+    margin-top: 20vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
