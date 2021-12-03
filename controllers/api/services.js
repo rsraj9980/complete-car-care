@@ -6,7 +6,8 @@ module.exports = {
 };
 
 async function index(req, res) {
-  res.json(req.body);
+  const service = await Service.find({});
+  res.json(service);
 }
 
 async function show(req, res) {

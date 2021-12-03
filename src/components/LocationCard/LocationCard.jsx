@@ -1,6 +1,7 @@
-
+import './LocationCard.css';
 export default function LocationCard({ location }) {
     return (
+        <div className = "locationCardBackgroundDiv">
         <div className="Card">
             <p>
             ShopName: {location.shopName}
@@ -17,6 +18,7 @@ export default function LocationCard({ location }) {
             <p>
             ZipCode: {location.ZipCode}
             </p>
+        </div>
         </div>
     ); 
 }
