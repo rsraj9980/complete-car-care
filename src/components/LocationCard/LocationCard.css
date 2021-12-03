@@ -1,0 +1,11 @@
+.Card {
+    display: grid;
+    justify-items: center;
+    box-shadow: 2px 4px 8px 0 black;
+    transition: 0.3s;
+    height: 90vmin;
+    background-position: center;
+    background-size: cover;
+    margin: 30px;
+    border-radius: 20px;
+}

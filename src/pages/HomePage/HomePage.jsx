@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomePage.css';
-export default function NewOrderPage() {
+export default function HomePage() {
   return (
     <div className="homeDiv">
       <p>Glass shine</p>
