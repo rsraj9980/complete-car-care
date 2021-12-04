@@ -14,6 +14,8 @@ export default function NavBar(props) {
     <nav>
       <Link style={{ textDecoration: 'none' , color: 'black' }} to="/">HOME</Link>
       &nbsp; | &nbsp;
+      <Link style={{ textDecoration: 'none' , color: 'black' }} to="/appointments">APPOINTMENT</Link>
+      &nbsp; | &nbsp;
       <Link style={{ textDecoration: 'none' , color: 'black'}} to="/locations">LOCATIONS</Link>
       &nbsp; | &nbsp;
       <Link style={{ textDecoration: 'none' , color: 'black'}} to="/services">SERVICES OFFERED</Link>

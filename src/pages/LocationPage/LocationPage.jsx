@@ -1,6 +1,6 @@
 import React from 'react';
 import LocationCard from '../../components/LocationCard/LocationCard';
-import './Location.css';
+import './LocationPage.css';
 export default function Loaction({locations}) {
 
   return (

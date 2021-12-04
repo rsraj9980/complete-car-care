@@ -1,7 +1,7 @@
 .homeDiv{
     background-image: url('https://media.giphy.com/avatars/premicarsbrasil/u2KS26MQ0SNt.gif');
-    width: auto;
-    height: 100vmin;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     margin-top: 0px;
     padding:0px;

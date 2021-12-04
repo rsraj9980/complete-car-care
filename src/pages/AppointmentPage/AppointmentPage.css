@@ -1,0 +1,19 @@
+.appointmentDiv{
+    display: grid; 
+    grid-gap: 30px;
+    justify-content: center;
+
+}
+.appointmentMainDiv{
+    background-repeat: no-repeat;
+}
+.react-calendar {
+    border-radius: 10px;
+}
+.react-calendar__tile{
+    border-radius: 10px;
+}
+.react-time-picker__wrapper{
+    background-color: sandybrown;
+    height: 10vmin;
+}
