@@ -1,21 +1,11 @@
-import React, { useState,useEffect} from 'react';
+import React, { useEffect} from 'react';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
-import * as servicesAPI from '../../utilities/services-api';
+import './ServicesListPage.css';
 
-
-export default function ServicesListPage({services, setServices}) {
-
-  useEffect(function() {
-    async function getServices() {
-      const services = await servicesAPI.getAll();
-      console.log("Hello");
-      setServices(services);
-    }
-    getServices();
-  }, []);
+export default function ServicesListPage({services}) {
 
   return (
-    <div>
+    <div className="serviceMainDiv">
       {services.map((service) => <ServiceCard  service = {service}/>)}
     </div>
   );

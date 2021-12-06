@@ -34,11 +34,6 @@ const Service = require('./models/service');
             sortOrder: 50
         },
         {
-            name:"Vinyl Wraping",
-            desc:"A vehicle vinyl wrap describes the automotive aftermarket practice of completely or partially covering a vehicle's original paint with a vinyl wrap of a different color, and sometimes the same color with a differing finish like a gloss, matte or clear protective layer.",
-            sortOrder: 60
-        },
-        {
             name:"Paintless Dent Removal",
             desc:"Paintless dent repair (PDR), also known as paintless dent removal, describes a method of removing minor dents from the body of a motor vehicle. A wide range of damage can be repaired using paintless dent repair as long as the paint surface is intact. Paintless dent repair may be used on both aluminum and steel panels.",
             sortOrder: 70

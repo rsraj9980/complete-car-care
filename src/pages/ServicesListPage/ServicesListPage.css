@@ -1,0 +1,7 @@
+.serviceMainDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 0px;
+    justify-content: center;
+    margin-top: 5vmin;
+}
