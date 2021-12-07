@@ -1,16 +1,12 @@
 const Service = require('../../models/service');
+const fetch = require('node-fetch');
 
 module.exports = {
-  index,
-  show
+  getAll
 };
 
-async function index(req, res) {
+async function getAll(req, res) {
   const service = await Service.find({});
   res.json(service);
 }
 
-async function show(req, res) {
-  const service = await Service.findById(req.params.id);
-  res.json(service);
-}

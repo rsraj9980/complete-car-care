@@ -32,7 +32,7 @@ export default function App() {
           <Routes>
             {/* client-side route that renders the component instance if the path matches the url in the address bar */}
             <Route path="/services" element={<ServiceListPage services={services} />} />
-            <Route path="/locations" element={<LocationPage locations={locations}/>} />
+            <Route path="/locations" element={<LocationPage locations={locations} />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/appointments" element={<AppoinmentPage user={user} services={services}/>}/>
           </Routes>
