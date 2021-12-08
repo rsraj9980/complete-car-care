@@ -8,15 +8,15 @@ import Appointment from '../../components/Appointment/Appointment';
 export default function AppoinmentPage({user, services}) {
     const [appointments, setAppointments] = useState([]);
 
+
     async function handleAddAppointment(date, selectedServices) {
         const appointment = await appointmentsAPI.add(date,selectedServices);
         setAppointments([...appointments, appointment]);
-        console.log("Handle working ");
-        console.log({appointment});
-      }
+    }
+
     return (
         <div className="appointmentMainDiv">
-            <Appointment user={user} services={services} handleAddAppointment= {handleAddAppointment}  />
+            <Appointment user={user} services={services} handleAddAppointment= {handleAddAppointment} />
         </div>
     );
 }
