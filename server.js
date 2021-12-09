@@ -21,11 +21,12 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(require('./config/checkToken'));
 
 // Put API routes here, before the "catch all" route
+const ensureLoggedIn = require('./config/ensureLoggedIn');
 app.use('/api/users', require('./routes/api/users'));
-app.use('/api/appointments', require('./routes/api/appointments'));
+app.use('/api/appointments',ensureLoggedIn, require('./routes/api/appointments'));
 
 // Protect the api routes below from anonymous users
-const ensureLoggedIn = require('./config/ensureLoggedIn');
+
 app.use('/api/services',require('./routes/api/services'));
 
 // The following "catch all" route (note the *) is necessary

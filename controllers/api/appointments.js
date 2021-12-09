@@ -1,6 +1,7 @@
 const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 const Appointment = require('../../models/appointment');
+const user = require('../../models/user');
 
 const FROM_EMAIL = 'test9646@outlook.com'
 module.exports = {
@@ -18,8 +19,7 @@ async function create(req, res) {
 }
 
 async function getAll(req, res) {
-    console.log("Hey! Its your controller Speaking MAYDAY MAYDAY");
-    const appointment = await Appointment.find({});
+    const appointment = await Appointment.find({'user': req.user._id});
     res.json(appointment);
 }
   

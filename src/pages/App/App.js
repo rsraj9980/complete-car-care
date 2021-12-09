@@ -44,7 +44,7 @@ export default function App() {
             <Route path="/locations" element={<LocationPage locations={locations} />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/appointments" element={<AppoinmentPage user={user} services={services}/>}/>
-            <Route path="/appointments/myAppointments" element={<MyAppoinmentsPage myAppointments={myAppointments}/>}/>
+            <Route path="/appointments/myAppointments" element={<MyAppoinmentsPage user={user} myAppointments={myAppointments}/>}/>
           </Routes>
         </>
         :
