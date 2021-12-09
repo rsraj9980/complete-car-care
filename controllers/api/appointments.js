@@ -31,12 +31,18 @@ async function sendEmail (appointment, user) {
     let formattedDateTime = appointment.date.toLocaleString();
     let AmPm = formattedDateTime.slice(-2);
     formattedDateTime = formattedDateTime.substr(0 ,formattedDateTime.length - 6) + " " + AmPm;
+
     const msg = {
       to: [`${user.email}` , 'test4696@outlook.com'], 
       from: FROM_EMAIL,
       subject: 'Appointment Confirmation',
       text: `Your appointment has been confirmed for ${formattedDateTime}`,
-      html: `<p>Your appointment has been confirmed for ${formattedDateTime}</p>`,
+      html: `<h1>Appointment Confirmation</h1> 
+      <br/> 
+      <p>Your appointment has been confirmed for ${formattedDateTime}</p>
+      <br/>
+      <p>Thank You, for using our online appointment portal. We will hope to see you soon.</p>`,
+      
     }
   return sgMail.send(msg);
 }
