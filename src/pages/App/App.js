@@ -9,12 +9,15 @@ import HomePage from '../HomePage/HomePage';
 import {locations} from '../../location.js';
 import LocationPage from '../LocationPage/LocationPage';
 import AppoinmentPage from '../AppointmentPage/AppointmentPage';
+import MyAppoinmentsPage from '../MyAppointmentsPage/MyAppointmentsPage';
 import * as servicesAPI from '../../utilities/services-api';
+import * as appointmentsAPI from '../../utilities/appointments-api';
 
 
 export default function App() {
   const [user, setUser] = useState(getUser());
   const [services, setServices] = useState([]);
+  const [myAppointments, setMyAppointments] = useState([]);
 
   useEffect(function() {
     async function getServices() {
@@ -22,7 +25,13 @@ export default function App() {
       setServices(services);
     }
     getServices();
+    async function getAppointments() {
+      const myAppointments = await appointmentsAPI.getAll();
+      setMyAppointments(myAppointments);
+    }
+    getAppointments();
   }, []);
+
 
   return (
     <main className="App">
@@ -35,6 +44,7 @@ export default function App() {
             <Route path="/locations" element={<LocationPage locations={locations} />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/appointments" element={<AppoinmentPage user={user} services={services}/>}/>
+            <Route path="/appointments/myAppointments" element={<MyAppoinmentsPage myAppointments={myAppointments}/>}/>
           </Routes>
         </>
         :

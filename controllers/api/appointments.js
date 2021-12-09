@@ -4,7 +4,8 @@ const Appointment = require('../../models/appointment');
 
 const FROM_EMAIL = 'test9646@outlook.com'
 module.exports = {
-  create
+  create,
+  getAll
 };
 
 async function create(req, res) {
@@ -14,9 +15,17 @@ async function create(req, res) {
     const appointment = await Appointment.create(req.body);
     sendEmail(appointment, req.user);
     res.json(appointment);
-  }
+}
 
-  //Helper functions
+async function getAll(req, res) {
+    console.log("Hey! Its your controller Speaking MAYDAY MAYDAY");
+    const appointment = await Appointment.find({});
+    res.json(appointment);
+}
+  
+  
+
+//Helper functions
 async function sendEmail (appointment, user) {
     let formattedDateTime = appointment.date.toLocaleString();
     let AmPm = formattedDateTime.slice(-2);
@@ -28,8 +37,8 @@ async function sendEmail (appointment, user) {
       text: `Your appointment has been confirmed for ${formattedDateTime}`,
       html: `<p>Your appointment has been confirmed for ${formattedDateTime}</p>`,
     }
-    return sgMail.send(msg);
-  }
+  return sgMail.send(msg);
+}
   
 
 

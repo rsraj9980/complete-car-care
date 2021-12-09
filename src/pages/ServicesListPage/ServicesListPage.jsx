@@ -6,7 +6,7 @@ export default function ServicesListPage({services}) {
 
   return (
     <div className="serviceMainDiv">
-      {services.map((service) => <ServiceCard  service = {service}/>)}
+      {services.map((service, idx) => <ServiceCard  service = {service} key={idx}/>)}
     </div>
   );
 }

@@ -7,8 +7,8 @@ export default function Loaction({locations}) {
     <div className= "LocationBackgroundDiv">
       <h1>Locations</h1>
       <ul>
-      {locations.map((l) => (
-        <LocationCard location={l} />
+      {locations.map((l, idx) => (
+        <LocationCard location={l} key={idx} />
       ))}
       </ul>
     </div>
