@@ -38,7 +38,7 @@ async function sendEmail (appointment, user) {
       text: `Your appointment has been confirmed for ${formattedDateTime}`,
       html: `<p>Your appointment has been confirmed for ${formattedDateTime}</p>`,
     }
-  //return sgMail.send(msg);
+  return sgMail.send(msg);
 }
   
 
