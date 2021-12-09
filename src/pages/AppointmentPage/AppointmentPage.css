@@ -1,19 +1,40 @@
 .appointmentDiv{
     display: grid; 
-    grid-gap: 30px;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
 
 }
 .appointmentMainDiv{
     background-repeat: no-repeat;
 }
 .react-calendar {
+
+    margin-top:30px;
+    margin-left:30px;
+    width: 70vmin;
+    height: auto;
     border-radius: 10px;
 }
 .react-calendar__tile{
+    font-size: 20px;
     border-radius: 10px;
 }
 .react-time-picker__wrapper{
-    background-color: sandybrown;
+    margin:30px 80px 30px 0px;
     height: 10vmin;
+    width: 90vmin;
+    font-size: 40px;
 }
+.css-1s2u09g-control {
+    width:90vmin;
+}
+.btn {
+    box-shadow: none;
+    margin-right: 80px;
+    width: 90vmin;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+    letter-spacing: 1.3px
+  }

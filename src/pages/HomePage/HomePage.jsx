@@ -3,11 +3,14 @@ import './HomePage.css';
 export default function HomePage() {
   return (
     <div className="homeDiv">
-      <p>Glass shine</p>
-      <p>Tire Shine</p>
-      <p>Paint restorer</p>
-      <p>Polish</p>
-      <p className="headlight"> ──── Headlight Shine</p>
+      <ul className="HomeUl">
+        <li>
+          Glass shine</li>
+        <li>Tire Shine</li>
+        <li>Paint restorer</li>
+        <li>Polish</li>
+        <li> Headlight Shine</li>
+      </ul>
     </div>
   );
 }

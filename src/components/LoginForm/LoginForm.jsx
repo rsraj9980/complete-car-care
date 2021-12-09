@@ -29,17 +29,20 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div>
-      <div className="login-form-container" onSubmit={handleSubmit}>
-        <form autoComplete="off" >
-          <p>
-          <label>Email</label>
-          <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
-          </p>
-          <p>
-          <label>Password</label>
-          <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-          </p>
-          <button type="submit">LOG IN</button>
+      <div className="wrapperLogin" onSubmit={handleSubmit}>
+      <div className="logo"> <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" /> </div>
+      <div className="text-center mt-4 name"> LOGIN </div>
+        <form className="p-3 mt-3" >
+          <div className="form-field d-flex align-items-center">
+          <span className="far fa-user"></span>
+            <input type="text" name="email" value={credentials.email} onChange={handleChange} required placeholder="Username" />
+          </div>
+          <div className="form-field d-flex align-items-center">
+          <span className="fas fa-key"></span>
+            <input type="password" placeholder="Password" name="password" value={credentials.password} onChange={handleChange} required />
+          </div>
+          
+          <button className="btn" type="submit">LOG IN</button>
         </form>
       </div>
       <p className="error-message">&nbsp;{error}</p>

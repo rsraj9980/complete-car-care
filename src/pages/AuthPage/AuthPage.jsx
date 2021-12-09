@@ -6,8 +6,21 @@ import "./AuthPage.css";
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
+    <>
+    <div className="bubbles">
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    </div>
     <div className="bodyDiv">
-    <h1>Welcome to Complete Car Wash</h1>
+    <h1 className="AuthH1">Complete Car Wash</h1>
     <div className = "AuthDiv">
       <p>
       <SignUpForm setUser={setUser} />
@@ -17,5 +30,6 @@ export default function AuthPage({ setUser }) {
       </p>
     </div>
     </div>
+    </>
   );
 }

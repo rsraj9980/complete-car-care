@@ -44,25 +44,28 @@ export default class SignUpForm extends Component {
     const disable = this.state.password !== this.state.confirm;
     return (
       <div>
-        <div className="signup-form-container">
-          <form autoComplete="off" onSubmit={this.handleSubmit}>
-            <p>
-            <label>Name</label>
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
-            </p>
-            <p>
-            <label>Email</label>
-            <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
-            </p>
-            <p>
-            <label>Password</label>
-            <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
-            </p>
-            <p>
-            <label>Confirm</label>
-            <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
-            </p>
-            <button type="submit" disabled={disable}>SIGN UP</button>
+        <div className="wrapper">
+        <div className="logo"> <img src="https://cdn-icons.flaticon.com/png/512/4400/premium/4400828.png?token=exp=1639027674~hmac=989f16e9b953cb3e5c833e978571a7e2" /> </div>
+        <div className="text-center mt-4 name"> SIGNUP </div>
+          <form autoComplete="off" onSubmit={this.handleSubmit} className="p-3 mt-3" >
+          <div className="form-field d-flex align-items-center">
+          <span className="far fa-user"></span>
+            <input placeholder="Name" type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
+            </div>
+
+          <div className="form-field d-flex align-items-center">
+            <span className="far fa-user"></span>
+            <input placeholder="Email"  type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+            </div>
+            <div className="form-field d-flex align-items-center">
+          <span className="far fa-user"></span>
+            <input placeholder="Password"  type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
+          </div>
+          <div className="form-field d-flex align-items-center">
+          <span className="far fa-user"></span>
+            <input placeholder="Confirm"  type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+            </div>
+            <button className="btn" type="submit" disabled={disable}>SIGN UP</button>
           </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>

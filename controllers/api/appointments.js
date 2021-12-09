@@ -1,4 +1,5 @@
-const sgMail = require('@sendgrid/mail')
+const sgMail = require('@sendgrid/mail');
+const appointment = require('../../models/appointment');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 const Appointment = require('../../models/appointment');
 const user = require('../../models/user');
@@ -19,7 +20,7 @@ async function create(req, res) {
 }
 
 async function getAll(req, res) {
-    const appointment = await Appointment.find({'user': req.user._id});
+    const appointment = await Appointment.find({"user" :`${req.user._id}`});
     res.json(appointment);
 }
   
@@ -37,7 +38,7 @@ async function sendEmail (appointment, user) {
       text: `Your appointment has been confirmed for ${formattedDateTime}`,
       html: `<p>Your appointment has been confirmed for ${formattedDateTime}</p>`,
     }
-  return sgMail.send(msg);
+  //return sgMail.send(msg);
 }
   
 

@@ -1,0 +1,8 @@
+.LocationDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.locationImg{
+    width: 90vmin;
+    height: 90vmin;
+}

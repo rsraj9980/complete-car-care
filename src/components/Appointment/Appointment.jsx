@@ -4,6 +4,7 @@ import Calendar from 'react-calendar';
 import TimePicker from 'react-time-picker';
 import Select from 'react-select';
 import { useNavigate } from 'react-router-dom';
+import '../../pages/AppointmentPage/AppointmentPage.css';
 
 
 export default function Appoinment({user , services, handleAddAppointment}) {
@@ -15,7 +16,6 @@ export default function Appoinment({user , services, handleAddAppointment}) {
 
     function handleSubmit(e) {
         e.preventDefault();
-
         date.setHours(time.substr(0,2));
         date.setMinutes(time.substr(3,2));
         handleAddAppointment(date, selectedServices);
@@ -31,27 +31,30 @@ export default function Appoinment({user , services, handleAddAppointment}) {
     }
     return (
         <div className="appointmentMainDiv">
-        <div className="appointmentDiv">
-        <form onSubmit={handleSubmit}>
+        <form className="appointmentDiv" onSubmit={handleSubmit}>
+        
         <Calendar
                 className = "react-calendar"
                 value={date}
                 onChange={setDate}
             />
+            <p>
             <TimePicker
                 value={time}
                 onChange={setTime}
                 disableClock={true}
             />
+            <br />
              <Select 
              options={serviceOptions} 
              onChange={handleChangeServices}
              name="Services"
              />
-            <button type="submit">Set Appointment
+             <br />
+            <button className="btn" type="submit">Set Appointment
             </button>
+            </p>
             </form>
-        </div>
         </div>
     );
 }

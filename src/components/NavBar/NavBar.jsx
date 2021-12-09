@@ -12,7 +12,7 @@ export default function NavBar(props) {
 
   return (
     <nav>
-      <Link style={{ textDecoration: 'none' , color: 'black' }} to="/">HOME</Link>
+      <Link style={{ textDecoration: 'none' , color: 'black'  }} to="/">HOME</Link>
       &nbsp; | &nbsp;
       <Link style={{ textDecoration: 'none' , color: 'black' }} to="/appointments">APPOINTMENT</Link>
       &nbsp; | &nbsp;
