@@ -45,7 +45,7 @@ export default class SignUpForm extends Component {
     return (
       <div>
         <div className="wrapper">
-        <div className="logo"> <img src="https://cdn-icons-png.flaticon.com/512/5721/5721113.png" /> </div>
+        <div className="logo"> <img src="https://cdn-icons.flaticon.com/png/512/4822/premium/4822695.png?token=exp=1639042169~hmac=7c9b51dbc0e432afc75857ece4b55a4a" /> </div>
         <div className="text-center mt-4 name"> SIGNUP </div>
           <form autoComplete="off" onSubmit={this.handleSubmit} className="p-3 mt-3" >
           <div className="form-field d-flex align-items-center">
