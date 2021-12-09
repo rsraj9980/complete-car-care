@@ -2,61 +2,52 @@
 
 ![Complete Car Care](https://images.pexels.com/photos/210627/pexels-photo-210627.jpeg?cs=srgb&dl=pexels-pixabay-210627.jpg&fm=jpg)
 
-Complete Car care is a 
+Complete Car care is an appointment scheduling and management application for Car wash shops. A user can signin, logout and signup with a new account and also get a confirmation email of the appointments they scheduled. 
 
-All users will have access to the "All Tasks" page for viewing all posted Tasks, the bidding page for the given Task, the "My Tasks" page for view any of their created Tasks, the "Create Task" page for creating a Task, and the "Create Category" page for creating a specialized category for a Task.
+All users will have access to the "Srevices offered" page for viewing all services offered, the loactions page for the shop locations, the "My appointment" page for view any of their created appointmmnet, the "Appointments" page for creating an appointment, and the "Home" page as a startup.
 
-The "All Tasks" page will only allow users to view Tasks posted by others, so that they can not bid on a task they created. 
+The "My Appointments" page will only allow users to view appointments posted by them only.
 
-The Task bidding page will allow a user to cast their bid for the chance to provide service to the user who posted the Task, with the lowest bid winning the opportunity. Each of the bids will also be posted to the page as well.
+The Appointments page will allow a user to select a data using a calender date picker, select a time using a time picker and allow user to select a service from a drop down selection menu and then a submissions button to send appointment confirmation.
 
-On the user's "My Tasks" page, they will be able to view each of their created Tasks, as well as being able to edit & delete the information for them as well.
-
-The "Create Task" page will allow the user to create & post a new Task for others to bid on. There is also a button on the page to take the user to the "Create Category" page, if the specialized category can not initially be referenced for creating the Task.
+The "Loactions" page will allow the user to see which shop is nearby to them by showing all the shop addresses. 
 
 ### __Screenshots__
-![UrWy Landing Page - Desktop](https://i.imgur.com/SVXH263.png)
-##### UrWy Landing Page - Desktop
+![Complete Car Care Landing Page - Desktop](https://i.imgur.com/wQyfoIf.png)
+##### Complete Car Care Landing Page - Desktop
 
-![UrWy Landing Page - Mobile](https://i.imgur.com/s4gcs0q.png)
-##### UrWy Landing Page - Mobile
+![Complete Car Care Home Page](https://i.imgur.com/rkXDRnC.png)
+##### Complete Car Care Home Page
 
-![UrWy All Tasks Page](https://i.imgur.com/cnIgujH.png)
-##### UrWy All Tasks Page
+![Complete Car Care Appointments Page](https://i.imgur.com/Zkotf2p.png)
+##### Complete Car Care Appointments Page
 
-![UrWy Task Bidding Page](https://i.imgur.com/PUch4k2.png)
-##### UrWy Task Bidding Page
+![Complete Car Care My Appointments Page](https://i.imgur.com/7owg1xd.png)
+##### Complete Car Care My Appointments Page
 
-![UrWy My Tasks Page](https://i.imgur.com/rvt1C6n.png)
-##### UrWy My Tasks Page
+![Complete Car Care Loactions Page](https://i.imgur.com/2SSca4f.png)
+##### Complete Car Care Loactions Page
 
-![UrWy Create Task Page](https://i.imgur.com/ms9mhzj.png)
-##### UrWy Create Task Page
-
-![UrWy Create Category Page](https://i.imgur.com/FapNMeh.png)
-##### UrWy Create Category Page
+![Complete Car Care Services Offered Page](https://i.imgur.com/yiK0Uo5.png)
+##### Complete Car Care  Services Offered Page
 
 
 ### __Technologies Used__
-* CSS
-* Django
-* Heroku
-* HTML
-* Materialize
-* Python
+* MondoDb
+* Express
+* React
+* Node.Js
 
 
 ### __Getting Started__
-Please click into the below hyperlink to access UrWy:
-* [UrWy](https://urwy.herokuapp.com/)
+Please click into the below hyperlink to access Complete Car Care:
+* [Complete Car Care](https://complete-car-care.herokuapp.com/)
 
-Please click into the below hyperlink to access our UrWy Trello board:
-* [Trello Board](https://trello.com/b/SNc09aFT/project-3-planning)
+Please click into the below hyperlink to access our Complete Car Care Trello board:
+* [Trello Board](https://trello.com/b/zeeKwx4U/complete-car-care)
 
 
 ### __Further Enhancements (Icebox)__
-* Adding Search by Task functionality
-* Posting messages on the bidding page
-* Displaying user avatar for accounts
-* Posting reviews for users
-* Adding money transfer API for Task payment (ex. Stripe)
+* Adding Services offered and a template kind of Email with proper design.
+* Adding Admin side fucntionality
+* Adding Google maps API in Locations page.
